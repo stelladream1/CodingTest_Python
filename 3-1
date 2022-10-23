@@ -1,0 +1,7 @@
+a, b = map(int,input().split(" "))
+list_array = [0]
+for i in range(a):
+    numbers = list(map(int,input().split(" ")))
+    list_array.append(min(numbers))
+
+print(max(list_array))
