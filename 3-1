@@ -5,3 +5,11 @@ for i in range(a):
     list_array.append(min(numbers))
 
 print(max(list_array))
+------------------------------------
+a, b = map(int,input().split(" "))
+result = 0
+for i in range(a):
+    numbers = list(map(int,input().split(" ")))
+    min_value = min(numbers)
+    result = max(result,min_value)
+print(result)
