@@ -1,0 +1,12 @@
+n = int(input())
+datas = list(map(int, input().split(" ")))
+datas.sort()
+
+result = 0
+count = 0
+for i in datas:
+    count = count + 1
+    if count >= i:
+        result = result + 1
+        count = 0
+print(result)
